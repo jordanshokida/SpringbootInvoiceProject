@@ -1,0 +1,640 @@
+{
+	"info": {
+		"_postman_id": "bd0ebdad-9a29-4fb8-a75c-7101b1749717",
+		"name": "ProyectoFinalShokidaJordan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20399994"
+	},
+	"item": [
+		{
+			"name": "CLIENTE",
+			"item": [
+				{
+					"name": "GetClienteById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getCliente/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCliente",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClienteByNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getCliente/nombre?nombre=Jordán",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCliente",
+								"nombre"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Jordán"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFacturasByCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getFacturasPorCliente/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getFacturasPorCliente",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Ignacio\",\r\n    \"apellido\":\"Dominguez\",\r\n    \"direccion\":\"Conde 1945 3D\",\r\n    \"dni\":\"37273739\",\r\n    \"telefono\":\"1165124386\",\r\n    \"email\": \"'nachocabj86@hotmail.com'\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/setCliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"setCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateClienteTelefonoById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/updateClienteTelefono?id=3&tel=1559675402",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updateClienteTelefono"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								},
+								{
+									"key": "tel",
+									"value": "1559675402"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteClienteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/deleteCliente/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteCliente",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PRODUCTO",
+			"item": [
+				{
+					"name": "GetProductoById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getProductoById/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getProductoById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductosListByNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getProductosListByNombre?nombre=Guitarra Fender Stratocaster",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getProductosListByNombre"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Guitarra Fender Stratocaster"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductoByNombreYDescripcion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getProductoByNombreYDescripcion?nombre=Guitarra Fender Stratocaster&descripcion=USA",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getProductoByNombreYDescripcion"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Guitarra Fender Stratocaster"
+								},
+								{
+									"key": "descripcion",
+									"value": "USA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Amplificador Marshall JVM 410\",\r\n    \"descripcion\":\"Combo con parlantes Celestion\",\r\n    \"cantidadEnStock\":13,\r\n    \"precio\":204000.0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/setproducto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"setproducto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePrecioProductoById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/updatePrecioProducto?id=2&precio=172000.0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updatePrecioProducto"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "precio",
+									"value": "172000.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStockProductoById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/updateStockProducto?id=7&cant=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updateStockProducto"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								},
+								{
+									"key": "cant",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProductoById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/deleteProducto/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteProducto",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPRESA",
+			"item": [
+				{
+					"name": "GetEmpresaById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getEmpresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getEmpresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEmpresasList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/empresas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetEmpresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {    \r\n    \"nombre\": \"Musinea\",\r\n    \"rubro\": \"Local de venta de instrumentos musicales\",\r\n    \"cuit\": \"30-70260742-4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/setEmpresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"setEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEmpresaById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/deleteEmpresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteEmpresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DETALLE",
+			"item": [
+				{
+					"name": "SetItem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreProducto\":\"Pedal Wah dunlop Crybaby\",\r\n    \"descripcion\":\"Incluye cable interpedal\",\r\n    \"cantidad\": 1,\r\n    \"totalParcial\": 33000.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/setItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"setItem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getItemById/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getItemById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetItemsList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getItemsList",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getItemsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCantidadItemById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/updateCantidadItem?id=1&cant=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updateCantidadItem"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "cant",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteItemById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/deleteItem/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteItem",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FACTURA",
+			"item": [
+				{
+					"name": "FacturarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": {\r\n    \"id\": 6,\r\n    \"nombre\": \"Horacio\",\r\n    \"apellido\": \"Guaraní\",\r\n    \"direccion\": \"Guevara 3567 2F\",\r\n    \"dni\": \"372737369\",\r\n    \"telefono\": \"1158749214\",\r\n    \"email\": \"horanicio@hotmail.com\"\r\n    },\r\n    \"idEmpresa\": 1,\r\n    \"detalleDtos\": [\r\n      {\r\n        \"nombreProducto\":\"Pedal Wah dunlop Crybaby\",\r\n        \"descripcionProducto\": \"Incluye cable interpedal\",\r\n        \"cantidad\": 1\r\n      },\r\n      {\r\n        \"nombreProducto\":\"Pedalera Boss gt-100\",\r\n        \"descripcionProducto\": \"Incluye transformador\",\r\n        \"cantidad\": 1\r\n       },\r\n       {\r\n        \"nombreProducto\":\"Guitarra Jackson dinky js22\",\r\n        \"descripcionProducto\": \"Microfono Seymour duncan y cuerpo de caoba\",\r\n        \"cantidad\": 1\r\n       }\r\n    ]\r\n} \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/facturarCompraDto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"facturarCompraDto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFacturasList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getFacturasList",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getFacturasList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFacturaById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getFacturaById/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getFacturaById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
