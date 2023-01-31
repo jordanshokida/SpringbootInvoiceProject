@@ -17,9 +17,6 @@ import java.util.Optional;
 public class DetalleServiceImpl implements DetalleService {
     @Autowired
     DetalleRepository detalleRepository;
-    @Autowired
-    ProductoRepository productoRepository;
-
 
     public Detalle crearDetalle(Detalle item) {return detalleRepository.save(item);
     }
