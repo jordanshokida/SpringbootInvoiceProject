@@ -30,7 +30,7 @@ public class FacturaServiceImpl implements FacturaService {
 
     public void borrarFactura(Long id) {
         Factura factura = obtenerFacturaPorId(id);
-        facturaRepository.deleteById(id);
+        facturaRepository.deleteById(factura.getId());
         log.info("Se va a borrar la factura {}", factura.getId());
     }
 
