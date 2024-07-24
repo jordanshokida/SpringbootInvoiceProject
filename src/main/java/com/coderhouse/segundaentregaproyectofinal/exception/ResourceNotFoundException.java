@@ -1,4 +1,4 @@
-package com.coderhouse.segundaentregaproyectofinal.expcetion;
+package com.coderhouse.segundaentregaproyectofinal.exception;
 
 public class ResourceNotFoundException extends RuntimeException{
     public ResourceNotFoundException(String message){

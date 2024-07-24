@@ -2,8 +2,8 @@ package com.coderhouse.segundaentregaproyectofinal.ServiceTest;
 
 import com.coderhouse.segundaentregaproyectofinal.entity.Producto;
 import com.coderhouse.segundaentregaproyectofinal.repository.ProductoRepository;
-import com.coderhouse.segundaentregaproyectofinal.expcetion.DbException;
-import com.coderhouse.segundaentregaproyectofinal.expcetion.ResourceNotFoundException;
+import com.coderhouse.segundaentregaproyectofinal.exception.DbException;
+import com.coderhouse.segundaentregaproyectofinal.exception.ResourceNotFoundException;
 import com.coderhouse.segundaentregaproyectofinal.service.ProductoServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

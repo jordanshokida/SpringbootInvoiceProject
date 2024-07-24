@@ -1,8 +1,8 @@
 package com.coderhouse.segundaentregaproyectofinal.service;
 
 import com.coderhouse.segundaentregaproyectofinal.entity.Producto;
-import com.coderhouse.segundaentregaproyectofinal.expcetion.DbException;
-import com.coderhouse.segundaentregaproyectofinal.expcetion.ResourceNotFoundException;
+import com.coderhouse.segundaentregaproyectofinal.exception.DbException;
+import com.coderhouse.segundaentregaproyectofinal.exception.ResourceNotFoundException;
 import com.coderhouse.segundaentregaproyectofinal.repository.ProductoRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

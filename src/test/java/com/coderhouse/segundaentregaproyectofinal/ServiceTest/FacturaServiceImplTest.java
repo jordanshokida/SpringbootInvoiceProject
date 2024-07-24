@@ -3,7 +3,7 @@ package com.coderhouse.segundaentregaproyectofinal.ServiceTest;
 import com.coderhouse.segundaentregaproyectofinal.dto.DetalleDto;
 import com.coderhouse.segundaentregaproyectofinal.dto.FacturaDto;
 import com.coderhouse.segundaentregaproyectofinal.entity.*;
-import com.coderhouse.segundaentregaproyectofinal.expcetion.DbException;
+import com.coderhouse.segundaentregaproyectofinal.exception.DbException;
 import com.coderhouse.segundaentregaproyectofinal.repository.FacturaRepository;
 import com.coderhouse.segundaentregaproyectofinal.service.ClienteService;
 import com.coderhouse.segundaentregaproyectofinal.service.EmpresaService;

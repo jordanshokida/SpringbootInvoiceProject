@@ -2,7 +2,7 @@ package com.coderhouse.segundaentregaproyectofinal.ServiceTest;
 
 import com.coderhouse.segundaentregaproyectofinal.entity.Empresa;
 import com.coderhouse.segundaentregaproyectofinal.repository.EmpresaRepository;
-import com.coderhouse.segundaentregaproyectofinal.expcetion.ResourceAlreadyExistsException;
+import com.coderhouse.segundaentregaproyectofinal.exception.ResourceAlreadyExistsException;
 import com.coderhouse.segundaentregaproyectofinal.service.EmpresaServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
